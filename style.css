@@ -1,0 +1,83 @@
+*, *::after, *::before{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+header {
+    background-color: #292838;
+    max-width: 100vw;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    
+}
+
+body{
+    background-color: #232841;
+}
+
+
+
+.logo {
+    position: relative;
+    margin-left: auto;
+    margin-right: 3vw;
+    max-height: 100%;
+}
+
+.nom{
+    
+    position: relative;
+    font-size: 2.5vw;
+    color: aliceblue;
+    margin-left: 3vw;
+}
+
+.Hero {
+    position: absolute;
+    max-width: 100vw;
+    display: flex;
+    overflow: hidden;
+}
+
+
+.imagestars{
+    position: relative;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    animation: dezoom 40s infinite;
+    
+    
+}
+
+
+@keyframes dezoom{
+    0% {
+        transform: scale(1.0);
+    }
+    
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+
+
+.text1{
+    position: absolute;
+    color:#FFE4AA;
+    font-size: 2vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 50%);
+}
+
